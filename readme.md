@@ -33,3 +33,15 @@ example: export PATH=$PATH:/Users/gently/go/bin
 
 Run your application by simply typing its name "hello" in the terminal
 
+
+### go work init ./hello
+Создание воркспейса
+
+### go work use ./example/hello
+Добавление проекта в воркспейс
+
+go work use [-r] [dir] adds a use directive to the go.work file for dir, if it exists, and removes the use directory if the argument directory doesn’t exist. The -r flag examines subdirectories of dir recursively.
+go work edit edits the go.work file similarly to go mod edit
+go work sync syncs dependencies from the workspace’s build list into each of the workspace modules.
+
+### 
